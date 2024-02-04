@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color:  #1c2841;
+            max-height: 70vh;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            position: sticky;
+            top: 0;
+            cursor: pointer;
+            z-index: 0;
+            border: 5px solid white;
+        }
+
+        .background1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0px;
+            position: relative;
+            top: 132px;
+            cursor: pointer;
+            background-color: darkslateblue;
+            width: 100vw;
+            z-index: 1;
+        }
+
+        .background {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: 0px;
+            position: sticky;
+            cursor: pointer;
+            background-color: darkslateblue;
+            width: 100vw;
+            z-index: 1;
+        }
+
+        .text-footer {
+            text-align: center;
+            padding: 30px 0;
+            font-family: 'Ubuntu', sans-serif;
+            display: flex;
+            justify-content: center;
+            color: white;
+            z-index: 1;
+        }
+
+        .background {
+            background: darkslateblue;
+            background-blend-mode: darken;
+            background-size: cover;
+        }
+
+        .nav-list {
+            width: 99%;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 5px;
+            border: 2px solid white;
+            border-radius: 10px;
+        }
+
+        .logo a:hover {
+            border: 2px solid black;
+            border-radius: 10px;
+            color:black ;
+        }
+
+        .logo img {
+            width: 99%;
+            border-radius: 50px;
+        }
+
+        .nav-list li {
+            list-style: none;
+            padding: 26px 30px;
+        }
+
+        .nav-list li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .nav-list li a:hover {
+            color: rgb(10, 6, 1);
+        }
+
+        .rightnav {
+            width: 99%;
+            text-align: right;
+        }
+
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+            width: 150px;
+            margin-top: 5px;
+        }
+
+        .btn {
+            padding: 8px 20px;
+            margin: 7px 0;
+            border: 2px solid white;
+            border-radius: 8px;
+            background: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        .btn-sm {
+            padding: 6px 10px;
+            vertical-align: middle;
+        }
+
+
+        .container {
+            max-width: 60%;
+            height:30%;
+            font-size: xx-large;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgb(189, 201, 238);
+            border-radius: 5px;
+            border:5px solid #f3f3f5;
+            border-radius: 5px;
+            box-shadow:1px 1px 20px darkslateblue inset;
+        }
+        .container1 h1{border: 2px solid white;
+            background-color: darkslateblue;
+            border-radius: 15px;
+            text-align: center;
+            color:white;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo">
+                <a href="/" style="text-decoration: none;">
+                    <h1 style="color: white;margin-right: 10px;">SKMV</h1>
+                </a>
+            </div>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+
+        <!-- <div class="rightNav">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">Search</button>
+        </div> -->
+    </nav>
+    <div class="container">
+        <div class="container1"><h1>About Us</h1></div>
+        <p>Welcome to our about page! We are a company dedicated to providing excellent services.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in quam id elit congue pellentesque. Sed vel
+            cursus lectus. Integer tristique libero ac dolor tincidunt, a ullamcorper risus tincidunt. Quisque auctor
+            enim a nisl interdum fringilla.</p>
+        <p>Proin vulputate felis at odio feugiat, in tristique ligula ultrices. Aliquam erat volutpat. Nulla facilisi.
+            In hac habitasse platea dictumst.</p>
+    </div>
+    <footer class="background1">
+        <p class="text-footer">
+            Copyright ©-All rights are reserved
+        </p>
+    </footer>
+</body>
+
+</html>
